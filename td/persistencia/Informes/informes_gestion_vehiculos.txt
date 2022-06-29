@@ -1,0 +1,6 @@
+		*-Informe de gestion de Gestion de Vehiculos-*
+			Fecha: [27/11/2020]
+			Reporte realizado por: [admin]
+
+Informacion del reporte: 
+el admin ha iniciado sesion

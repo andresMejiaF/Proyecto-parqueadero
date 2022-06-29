@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="489.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parqueadero.views.CRUDParqueaderoController">
+   <children>
+      <TabPane prefHeight="515.0" prefWidth="982.0" style="-fx-background-color: #570000;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Gestion Vehiculos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="611.0" prefWidth="982.0">
+                     <children>
+                        <SplitPane dividerPositions="0.49032258064516127" layoutX="6.0" layoutY="9.0" orientation="VERTICAL" prefHeight="467.0" prefWidth="638.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="774.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <Label layoutX="42.0" prefHeight="57.0" prefWidth="573.0" text="             Bienvenido a nuestro parqueadero" textFill="#570000" textOverrun="WORD_ELLIPSIS">
+                                       <font>
+                                          <Font name="Gabriola" size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="-25.0" layoutY="109.0" prefHeight="117.0" prefWidth="1011.0" />
+                                    <Label layoutX="14.0" layoutY="80.0" text="Inicio de sesion" underline="true">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font></Label>
+                                    <Label layoutX="363.0" layoutY="73.0" prefHeight="32.0" prefWidth="220.0" text="Ingrese el numero de su documento.">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font></Label>
+                                    <Button layoutX="363.0" layoutY="140.0" mnemonicParsing="false" onAction="#solicitarAcceso" prefHeight="26.0" prefWidth="263.0" text="Solicitar Acceso" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="18.0" />
+                                       </font></Button>
+                                    <TextField fx:id="cedulaIngresada" layoutX="363.0" layoutY="110.0" prefHeight="25.0" prefWidth="262.0" />
+                                    <Button layoutX="363.0" layoutY="181.0" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="26.0" prefWidth="263.0" text="Cerrar Sesion" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="18.0" />
+                                       </font></Button>
+                                    <Label layoutX="14.0" layoutY="101.0" text="Para tener acceso a todas las caracteristicas de la aplicación" />
+                                    <Label layoutX="14.0" layoutY="114.0" text="necesitamos un registro de quien esta realizando las" />
+                                    <Label layoutX="14.0" layoutY="127.0" prefHeight="17.0" prefWidth="314.0" text="operaciones en la misma, por esto le pedimos ingrese su " />
+                                    <Label layoutX="14.0" layoutY="140.0" prefHeight="17.0" prefWidth="314.0" text="documento de identidad o la &quot;clave&quot;; (admin)" />
+                                    <Label layoutX="15.0" layoutY="159.0" prefHeight="17.0" prefWidth="314.0" text="En caso de no iniciar sesion">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font></Label>
+                                    <Label layoutX="15.0" layoutY="172.0" prefHeight="17.0" prefWidth="314.0" text="no podra realizar ninguna ">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font></Label>
+                                    <Separator layoutX="-4.0" layoutY="56.0" prefHeight="4.0" prefWidth="641.0" />
+                                    <Separator layoutX="341.0" layoutY="57.0" orientation="VERTICAL" prefHeight="170.0" prefWidth="3.0" />
+                                    <Separator layoutX="635.0" layoutY="1.0" orientation="VERTICAL" prefHeight="616.0" prefWidth="0.0" />
+                                    <Label layoutX="15.0" layoutY="184.0" prefHeight="17.0" prefWidth="314.0" text="accion.">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="58.0" fitWidth="174.0" layoutX="262.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../td/persistencia/imagen/inicio.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children></AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="311.0" prefWidth="637.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="3.0" text="Información del propietario">
+                                       <font>
+                                          <Font name="Times New Roman" size="20.0" />
+                                       </font></Label>
+                                    <Separator layoutY="29.0" prefHeight="3.0" prefWidth="637.0" />
+                                    <Label layoutX="15.0" layoutY="44.0" text="Nombre:" />
+                                    <Label layoutX="15.0" layoutY="79.0" text="Cedula:" />
+                                    <Label layoutX="15.0" layoutY="113.0" text="Email:" />
+                                    <Label layoutX="15.0" layoutY="147.0" text="Telefono:" />
+                                    <TextField fx:id="tfNombreProp" layoutX="80.0" layoutY="40.0" prefHeight="25.0" prefWidth="240.0" />
+                                    <TextField fx:id="tfCedulaProp" layoutX="80.0" layoutY="75.0" prefHeight="25.0" prefWidth="239.0" />
+                                    <TextField fx:id="tfEmailProp" layoutX="80.0" layoutY="109.0" prefHeight="25.0" prefWidth="239.0" />
+                                    <TextField fx:id="tfTelefonoProp" layoutX="80.0" layoutY="144.0" prefHeight="25.0" prefWidth="238.0" />
+                                    <Button layoutX="11.0" layoutY="184.0" mnemonicParsing="false" onAction="#agregarVehiculo" prefHeight="40.0" prefWidth="132.0" text="Agregar vehiculo" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="20.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="147.0" layoutY="184.0" mnemonicParsing="false" onAction="#limpiarCamposDeTexto" prefHeight="40.0" prefWidth="173.0" text="Nuevo(limpiar campos)" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="20.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="342.0" layoutY="5.0" text="Información del vehiculo">
+                                       <font>
+                                          <Font name="Times New Roman" size="20.0" />
+                                       </font></Label>
+                                    <Label layoutX="340.0" layoutY="43.0" text="Placa:" />
+                                    <Label layoutX="340.0" layoutY="78.0" text="Modelo:" />
+                                    <Label layoutX="340.0" layoutY="113.0" text="Tipo Vehiculo:" />
+                                    <Label layoutX="340.0" layoutY="147.0" text="Velocidad maxima:" />
+                                    <Label layoutX="340.0" layoutY="183.0" text="Servicio" />
+                                    <TextField fx:id="tfPlacaVehi" layoutX="445.0" layoutY="39.0" prefHeight="25.0" prefWidth="180.0" />
+                                    <TextField fx:id="tfModeloVehi" layoutX="445.0" layoutY="74.0" prefHeight="25.0" prefWidth="180.0" />
+                                    <TextField fx:id="tfVelMaxVehi" layoutX="445.0" layoutY="144.0" prefHeight="25.0" prefWidth="180.0" />
+                                    <ComboBox fx:id="cbTipoVehi" layoutX="445.0" layoutY="109.0" prefHeight="25.0" prefWidth="181.0" />
+                                    <ComboBox fx:id="cbServiVehi" layoutX="388.0" layoutY="179.0" prefHeight="25.0" prefWidth="238.0" />
+                                    <Separator layoutX="325.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="5.0" />
+                                    <Separator layoutX="634.0" layoutY="-125.0" orientation="VERTICAL" prefHeight="616.0" prefWidth="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane dividerPositions="0.34698275862068967, 0.6487068965517241" layoutX="651.0" layoutY="9.0" orientation="VERTICAL" prefHeight="466.0" prefWidth="325.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <Button layoutX="14.0" layoutY="105.0" mnemonicParsing="false" onAction="#verificarVehiculoEnParqueadero" prefHeight="40.0" prefWidth="296.0" text="Verificar vehiculo en parqueadero" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="20.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="16.0" layoutY="6.0" text="Servicio: Busqueda vehiculo" underline="true">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="16.0" layoutY="27.0" text="Si desea saber si un vehiculo se encuentra en el " />
+                                    <Label layoutX="16.0" layoutY="45.0" text="parqueadero ingrese su placa aquí." />
+                                    <TextField fx:id="tfPlacaBuscar" layoutX="106.0" layoutY="71.0" prefHeight="25.0" prefWidth="203.0" />
+                                    <Label layoutX="16.0" layoutY="74.0" text="Placa a buscar:" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <Button layoutX="14.0" layoutY="82.0" mnemonicParsing="false" onAction="#verificarDisponibilidad" prefHeight="40.0" prefWidth="285.0" text="Verificar disponibilidad en parqueadero" textFill="#610000">
+                                       <font>
+                                          <Font name="Gabriola" size="20.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="14.0" layoutY="28.0" text="Si desea consultar si hay plazas disponibles en el " />
+                                    <Label layoutX="14.0" layoutY="46.0" text="parqueadero, pulse el boton de abajo." />
+                                    <Label layoutX="14.0" layoutY="6.0" text="Servicio: Consultar disponibilidad" underline="true">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <Label layoutX="13.0" layoutY="34.0" text="Si desea retirar un vehiculo del parqueadero, seleccionelo " />
+                                    <Label layoutX="13.0" layoutY="52.0" text="y pulse el boton." />
+                                    <Label layoutX="13.0" layoutY="11.0" text="Servicio: Retirar vehiculo del parqueadero" underline="true">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="14.0" layoutY="107.0" mnemonicParsing="false" onAction="#retirarVehiculo" prefHeight="25.0" prefWidth="298.0" text="Retirar vehiculo del parqueadero." textFill="#830b0b">
+                                       <font>
+                                          <Font name="Gabriola" size="20.0" />
+                                       </font>
+                                    </Button>
+                                    <ComboBox fx:id="cbVehiculo" layoutX="14.0" layoutY="75.0" prefHeight="25.0" prefWidth="298.0" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Gestion administrativa">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="485.0" prefWidth="668.0">
+                     <children>
+                        <SplitPane dividerPositions="0.42526315789473684" layoutX="7.0" layoutY="5.0" orientation="VERTICAL" prefHeight="477.0" prefWidth="639.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="629.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <Label layoutX="5.0" layoutY="2.0" text="Información del empleado">
+                                       <font>
+                                          <Font name="Times New Roman" size="15.0" />
+                                       </font></Label>
+                                    <Separator layoutY="20.0" prefHeight="3.0" prefWidth="637.0" />
+                                    <Label layoutX="15.0" layoutY="35.0" text="Nombre:" />
+                                    <Label layoutX="15.0" layoutY="69.0" text="Cedula:" />
+                                    <Label layoutX="15.0" layoutY="104.0" text="Telefono:" />
+                                    <TextField fx:id="tfNombreEmpleado" layoutX="76.0" layoutY="31.0" prefHeight="25.0" prefWidth="240.0" />
+                                    <TextField fx:id="tfCedulaEmpleado" layoutX="76.0" layoutY="65.0" prefHeight="25.0" prefWidth="240.0" />
+                                    <TextField fx:id="tfTelefonoEmpleado" layoutX="76.0" layoutY="100.0" prefHeight="25.0" prefWidth="240.0" />
+                                    <Separator layoutX="10.0" layoutY="139.0" prefHeight="6.0" prefWidth="630.0" />
+                                    <Button layoutX="8.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarEmpleado" prefHeight="40.0" prefWidth="126.0" text="Crear empleado" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="20.0" />
+                                       </font></Button>
+                                    <Button layoutX="141.0" layoutY="150.0" mnemonicParsing="false" onAction="#limpiarCamposDeTexto2" prefHeight="40.0" prefWidth="174.0" text="Nuevo(limpiar campos)" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="20.0" />
+                                       </font></Button>
+                                    <Separator layoutX="321.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="331.0" prefWidth="3.0" />
+                                    <Label layoutX="339.0" layoutY="1.0" text="Gestion servicios">
+                                       <font>
+                                          <Font name="Times New Roman" size="15.0" />
+                                       </font></Label>
+                                    <Label layoutX="339.0" layoutY="51.0" text="Empleado:" />
+                                    <Label layoutX="339.0" layoutY="88.0" text="Encargado de:" />
+                                    <ComboBox fx:id="cbEmpleados" layoutX="428.0" layoutY="47.0" prefHeight="25.0" prefWidth="190.0" />
+                                    <ComboBox fx:id="cbServicio" layoutX="428.0" layoutY="84.0" prefHeight="25.0" prefWidth="190.0" />
+                                    <Button layoutX="339.0" layoutY="150.0" mnemonicParsing="false" onAction="#crearServicio" prefHeight="40.0" prefWidth="286.0" text="Crear servicio" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="20.0" />
+                                       </font></Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="303.0" prefWidth="637.0">
+                                 <children>
+                                    <Separator layoutX="-7.0" layoutY="224.0" prefHeight="0.0" prefWidth="638.0" />
+                                    <Label layoutX="229.0" layoutY="3.0" lineSpacing="15.0" text="Panel de modificacion de datos." underline="true">
+                                       <font>
+                                          <Font name="Times New Roman" size="15.0" />
+                                       </font></Label>
+                                    <Separator layoutX="-4.0" layoutY="22.0" prefHeight="2.0" prefWidth="641.0" />
+                                    <Label layoutX="13.0" layoutY="26.0" text="Empleados">
+                                       <font>
+                                          <Font name="Times New Roman" size="15.0" />
+                                       </font></Label>
+                                    <Label layoutX="340.0" layoutY="27.0" text="Servicios">
+                                       <font>
+                                          <Font name="Times New Roman" size="15.0" />
+                                       </font></Label>
+                                    <Button layoutX="5.0" layoutY="230.0" mnemonicParsing="false" onAction="#modificarEmpleado" prefHeight="25.0" prefWidth="151.0" text="Modificar empleado" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="18.0" />
+                                       </font></Button>
+                                    <Button layoutX="158.0" layoutY="230.0" mnemonicParsing="false" onAction="#eliminarEmpleado" prefHeight="25.0" prefWidth="142.0" text="Eliminar empleado" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="18.0" />
+                                       </font></Button>
+                                    <Separator layoutX="322.0" layoutY="22.0" orientation="VERTICAL" prefHeight="252.0" prefWidth="6.0" />
+                                    <Button layoutX="604.0" layoutY="30.0" mnemonicParsing="false" text="?" />
+                                    <Button layoutX="331.0" layoutY="230.0" mnemonicParsing="false" onAction="#modificarServicio" prefHeight="25.0" prefWidth="140.0" text="Modificar servicio" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="18.0" />
+                                       </font></Button>
+                                    <Button layoutX="483.0" layoutY="230.0" mnemonicParsing="false" onAction="#eliminarServicio" prefHeight="25.0" prefWidth="141.0" text="Eliminar servicio" textFill="#570000">
+                                       <font>
+                                          <Font name="Gabriola" size="18.0" />
+                                       </font></Button>
+                                    <ComboBox fx:id="cbEmpleados2" layoutX="14.0" layoutY="66.0" onAction="#prueba" prefHeight="25.0" prefWidth="298.0" />
+                                    <Label layoutX="14.0" layoutY="47.0" text="Seleccione un empleado">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font></Label>
+                                    <ComboBox fx:id="cbServiVehi2" layoutX="340.0" layoutY="66.0" onAction="#prueba2" prefHeight="25.0" prefWidth="285.0" />
+                                    <Label layoutX="340.0" layoutY="47.0" text="Seleccione un servicio">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font></Label>
+                                    <Label layoutX="16.0" layoutY="119.0" text="Nombre:" />
+                                    <Label layoutX="17.0" layoutY="153.0" text="Cedula:" />
+                                    <Label layoutX="16.0" layoutY="188.0" text="Telefono:" />
+                                    <TextField fx:id="tfNombreEmpleadoedit" layoutX="75.0" layoutY="115.0" prefHeight="25.0" prefWidth="240.0" />
+                                    <TextField fx:id="tfCedulaEmpleadoedit" layoutX="75.0" layoutY="149.0" prefHeight="25.0" prefWidth="240.0" />
+                                    <TextField fx:id="tfTelefonoEmpleadoedit" layoutX="74.0" layoutY="184.0" prefHeight="25.0" prefWidth="240.0" />
+                                    <Label layoutX="14.0" layoutY="93.0" text="Ingrese los nuevos datos del empleado seleccionado">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font></Label>
+                                    <Label layoutX="343.0" layoutY="122.0" text="Empleado:" />
+                                    <Label layoutX="343.0" layoutY="159.0" text="Encargado de:" />
+                                    <ComboBox fx:id="cbEmpleados3" layoutX="432.0" layoutY="118.0" prefHeight="25.0" prefWidth="190.0" />
+                                    <ComboBox fx:id="cbServicio2" layoutX="432.0" layoutY="155.0" prefHeight="25.0" prefWidth="190.0" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <SplitPane dividerPositions="0.3192389006342495, 0.6638477801268499" layoutX="652.0" layoutY="6.0" orientation="VERTICAL" prefHeight="475.0" prefWidth="324.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <ImageView fitHeight="149.0" fitWidth="246.0" layoutX="56.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../td/persistencia/imagen/parking.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <Button layoutX="17.0" layoutY="70.0" mnemonicParsing="false" onAction="#generarInformeAdmin" prefHeight="57.0" prefWidth="289.0" text="Generar informe" textFill="#570000" underline="true">
+                                       <font>
+                                          <Font name="Gabriola" size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="16.0" layoutY="14.0" text="Generar informe: Gestion Administrativa" underline="true">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="31.0" text="Pulsando el siguiente boton, generara un informe">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="46.0" text="de lo que ha ocurrido en la interfaz administrativa">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <Button layoutX="17.0" layoutY="70.0" mnemonicParsing="false" onAction="#generarInformeVehiculo" prefHeight="57.0" prefWidth="289.0" text="Generar informe" textFill="#570000" underline="true">
+                                       <font>
+                                          <Font name="Gabriola" size="30.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="16.0" layoutY="14.0" text="Generar informe: Gestion vehiculos" underline="true">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="31.0" text="Pulsando el siguiente boton, generara un informe">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="46.0" text="de lo que ha ocurrido en la interfaz de vehiculos">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+oct 24, 2020 3:22:36 PM parqueadero.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: INGRESO_SISTEMA,Se ingreso al sistema,2020-10-24-3-22
+oct 24, 2020 3:22:36 PM parqueadero.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: INGRESO_SISTEMA,Se ingreso al sistema,2020-10-24-3-22
+oct 24, 2020 3:22:36 PM parqueadero.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: EJECUCION_MAIN,Se ejecuto el main,2020-10-24-3-22
+oct 24, 2020 3:23:15 PM parqueadero.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: CREACION_EMPLEADO,Se agrego el empleado correctamente,2020-10-24-3-23
+oct 24, 2020 3:23:15 PM parqueadero.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: Crear_Empleado,Empleado creado con exito,2020-10-24-3-23

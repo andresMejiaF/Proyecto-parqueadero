@@ -1,0 +1,18 @@
+oct 24, 2020 12:38:30 PM parking.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: Crear_Empleado,Empleado creado con exito,2020-10-24-0-38
+oct 24, 2020 12:38:35 PM parking.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: Crear_Empleado,Empleado creado con exito,2020-10-24-0-38
+oct 24, 2020 12:38:43 PM parking.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: Crear_Empleado,Empleado creado con exito,2020-10-24-0-38
+oct 24, 2020 12:40:54 PM parking.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: Crear_Empleado,Empleado creado con exito,2020-10-24-0-40
+oct 24, 2020 12:41:41 PM parking.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: Crear_Empleado,Empleado creado con exito,2020-10-24-0-41
+oct 24, 2020 12:44:50 PM parking.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: Crear_Empleado,Empleado creado con exito,2020-10-24-0-44
+oct 24, 2020 12:45:48 PM parking.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: Crear_Empleado,Empleado creado con exito,2020-10-24-0-45
+oct 24, 2020 12:50:00 PM parking.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: Crear_Empleado,Empleado creado con exito,2020-10-24-0-50
+oct 24, 2020 12:50:29 PM parking.persistencia.ArchivoUtil escribirEnLog
+INFORMACIÓN: Crear_Empleado,Empleado creado con exito,2020-10-24-0-50

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_271" class="java.beans.XMLDecoder">
+ <object class="parqueadero.model.Parqueadero" id="Parqueadero0">
+  <void property="listaEmpleados">
+   <void method="add">
+    <object class="parqueadero.model.Empleado">
+     <void property="cedula">
+      <string>1578</string>
+     </void>
+     <void property="nombre">
+      <string>Juan Alberto</string>
+     </void>
+     <void property="numTelefono">
+      <string>010101</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Empleado">
+     <void property="cedula">
+      <string>456654</string>
+     </void>
+     <void property="nombre">
+      <string>Maria Isabel</string>
+     </void>
+     <void property="numTelefono">
+      <string>123321</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Empleado">
+     <void property="cedula">
+      <string>777</string>
+     </void>
+     <void property="nombre">
+      <string>Andres Alguacil</string>
+     </void>
+     <void property="numTelefono">
+      <string>888</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Empleado">
+     <void property="cedula">
+      <string>02030102</string>
+     </void>
+     <void property="nombre">
+      <string>Marcos Baena</string>
+     </void>
+     <void property="numTelefono">
+      <string>0000</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Empleado">
+     <void property="cedula">
+      <string>0000</string>
+     </void>
+     <void property="nombre">
+      <string>JUANNUEVO</string>
+     </void>
+     <void property="numTelefono">
+      <string>0000</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void id="PuestoArray0" property="listaPuestos">
+   <void index="0">
+    <void property="disponible">
+     <boolean>false</boolean>
+    </void>
+    <void property="vehi">
+     <object class="parqueadero.model.Carro" id="Carro0">
+      <void property="modelo">
+       <string>1978 (Ingrese solo numeros)</string>
+      </void>
+      <void property="placa">
+       <string>placa1</string>
+      </void>
+      <void property="propiet">
+       <object class="parqueadero.model.Propietario">
+        <void property="correo">
+         <string>Correo electronico del propietario</string>
+        </void>
+        <void property="id">
+         <string>Documento de identidad del propietario</string>
+        </void>
+        <void property="nombre">
+         <string>Nombre completo del propietario</string>
+        </void>
+        <void property="telefono">
+         <string>Telefono movil o fijo del propietario</string>
+        </void>
+       </object>
+      </void>
+      <void property="serv">
+       <object class="parqueadero.model.Servicio">
+        <void property="emp">
+         <object class="parqueadero.model.Empleado">
+          <void property="cedula">
+           <string>02030102</string>
+          </void>
+          <void property="nombre">
+           <string>Marcos Baena</string>
+          </void>
+          <void property="numTelefono">
+           <string>0000</string>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void property="tipoVeh">
+       <string>Carro</string>
+      </void>
+      <void property="velMax">
+       <int>123</int>
+      </void>
+     </object>
+    </void>
+   </void>
+   <void index="1">
+    <void property="disponible">
+     <boolean>false</boolean>
+    </void>
+    <void property="vehi">
+     <object class="parqueadero.model.Carro" id="Carro1">
+      <void property="modelo">
+       <string>1978 (Ingrese solo numeros)</string>
+      </void>
+      <void property="placa">
+       <string>placa2</string>
+      </void>
+      <void property="propiet">
+       <object class="parqueadero.model.Propietario">
+        <void property="correo">
+         <string>Correo electronico del propietario</string>
+        </void>
+        <void property="id">
+         <string>Documento de identidad del propietario</string>
+        </void>
+        <void property="nombre">
+         <string>Nombre completo del propietario</string>
+        </void>
+        <void property="telefono">
+         <string>Telefono movil o fijo del propietario</string>
+        </void>
+       </object>
+      </void>
+      <void property="serv">
+       <object class="parqueadero.model.Servicio" id="Servicio0">
+        <void property="emp">
+         <object class="parqueadero.model.Empleado">
+          <void property="cedula">
+           <string>02030102</string>
+          </void>
+          <void property="nombre">
+           <string>Marcos Baena</string>
+          </void>
+          <void property="numTelefono">
+           <string>0000</string>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void property="tipoVeh">
+       <string>Carro</string>
+      </void>
+      <void property="velMax">
+       <int>123</int>
+      </void>
+     </object>
+    </void>
+   </void>
+   <void index="2">
+    <void property="disponible">
+     <boolean>false</boolean>
+    </void>
+    <void property="vehi">
+     <object class="parqueadero.model.Carro" id="Carro2">
+      <void property="modelo">
+       <string>1978 (Ingrese solo numeros)</string>
+      </void>
+      <void property="placa">
+       <string>placa3</string>
+      </void>
+      <void property="propiet">
+       <object class="parqueadero.model.Propietario">
+        <void property="correo">
+         <string>Correo electronico del propietario</string>
+        </void>
+        <void property="id">
+         <string>Documento de identidad del propietario</string>
+        </void>
+        <void property="nombre">
+         <string>Nombre completo del propietario</string>
+        </void>
+        <void property="telefono">
+         <string>Telefono movil o fijo del propietario</string>
+        </void>
+       </object>
+      </void>
+      <void property="serv">
+       <object idref="Servicio0"/>
+      </void>
+      <void property="tipoVeh">
+       <string>Carro</string>
+      </void>
+      <void property="velMax">
+       <int>123</int>
+      </void>
+     </object>
+    </void>
+   </void>
+  </void>
+  <void property="listaRegistros">
+   <void method="add">
+    <object class="parqueadero.model.Registro" id="Registro0">
+     <void class="parqueadero.model.Registro" method="getField">
+      <string>fechayhora</string>
+      <void method="set">
+       <object idref="Registro0"/>
+       <object class="java.util.GregorianCalendar">
+        <void property="time">
+         <object class="java.util.Date">
+          <long>1606343215330</long>
+         </object>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void class="parqueadero.model.Registro" method="getField">
+      <string>vehic</string>
+      <void method="set">
+       <object idref="Registro0"/>
+       <object idref="Carro0"/>
+      </void>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Registro" id="Registro1">
+     <void class="parqueadero.model.Registro" method="getField">
+      <string>fechayhora</string>
+      <void method="set">
+       <object idref="Registro1"/>
+       <object class="java.util.GregorianCalendar">
+        <void property="time">
+         <object class="java.util.Date">
+          <long>1606344267339</long>
+         </object>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void class="parqueadero.model.Registro" method="getField">
+      <string>vehic</string>
+      <void method="set">
+       <object idref="Registro1"/>
+       <object idref="Carro1"/>
+      </void>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Registro" id="Registro2">
+     <void class="parqueadero.model.Registro" method="getField">
+      <string>fechayhora</string>
+      <void method="set">
+       <object idref="Registro2"/>
+       <object class="java.util.GregorianCalendar">
+        <void property="time">
+         <object class="java.util.Date">
+          <long>1606344273683</long>
+         </object>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void class="parqueadero.model.Registro" method="getField">
+      <string>vehic</string>
+      <void method="set">
+       <object idref="Registro2"/>
+       <object idref="Carro2"/>
+      </void>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="listaServicios">
+   <void method="add">
+    <object idref="Servicio0"/>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Servicio">
+     <void property="emp">
+      <object class="parqueadero.model.Empleado">
+       <void property="cedula">
+        <string>456654</string>
+       </void>
+       <void property="nombre">
+        <string>Maria Isabel</string>
+       </void>
+       <void property="numTelefono">
+        <string>123321</string>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

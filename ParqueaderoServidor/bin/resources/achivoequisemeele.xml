@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_191" class="java.beans.XMLDecoder">
+ <object class="parqueadero.model.Parqueadero" id="Parqueadero0">
+  <void property="listaEmpleados">
+   <void method="add">
+    <object class="parqueadero.model.Empleado">
+     <void property="cedula">
+      <string>789</string>
+     </void>
+     <void property="nombre">
+      <string>jaime</string>
+     </void>
+     <void property="numTelefono">
+      <string>456</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Empleado">
+     <void property="cedula">
+      <string>jkl</string>
+     </void>
+     <void property="nombre">
+      <string>uioui</string>
+     </void>
+     <void property="numTelefono">
+      <string>jkl</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Empleado">
+     <void property="cedula">
+      <string>777</string>
+     </void>
+     <void property="nombre">
+      <string>Santiago</string>
+     </void>
+     <void property="numTelefono">
+      <string>456</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Empleado">
+     <void property="cedula">
+      <string>0</string>
+     </void>
+     <void property="nombre">
+      <string>laperradepoveda</string>
+     </void>
+     <void property="numTelefono">
+      <string>0</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Empleado">
+     <void property="cedula">
+      <string>02</string>
+     </void>
+     <void property="nombre">
+      <string>laperrahijueputadeperafan</string>
+     </void>
+     <void property="numTelefono">
+      <string>02</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="parqueadero.model.Empleado">
+     <void property="cedula">
+      <string>888</string>
+     </void>
+     <void property="nombre">
+      <string>laperrafan</string>
+     </void>
+     <void property="numTelefono">
+      <string>888</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
